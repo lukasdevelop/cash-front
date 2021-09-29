@@ -1,0 +1,72 @@
+.Navbar{
+
+    .MobileNavigation {
+        display: none;
+    }
+    
+    a:hover{
+        border-bottom: 5px solid #8C1CD1;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 1.5vw;
+    }
+}
+ 
+@media (max-width: 990px){
+
+    .Navbar {
+
+        opacity: 1;
+
+        a:hover{
+            border-bottom: none;
+            color: #8C1CD1;
+
+            &:hover{
+                background: none;
+            }
+        }
+
+        nav ul {
+            display: flex;
+            flex-direction: column;
+            width: 100%; 
+            position: absolute;
+            right: 0;   
+            background: #181818;
+            border-top: 2px solid #8C1CD1;
+            
+            li {
+                padding-left: 15%;
+            }
+
+        }
+
+        .Navigation {
+            display: none;
+        }
+
+        .MobileNavigation {
+            display: flex;
+            align-items: center;
+           
+            
+            .Hamburger{
+                position: absolute;
+                z-index: 1;
+                top:1%;
+                right: 0;
+                cursor: pointer;
+                
+               
+            }
+        }
+    }
+}
